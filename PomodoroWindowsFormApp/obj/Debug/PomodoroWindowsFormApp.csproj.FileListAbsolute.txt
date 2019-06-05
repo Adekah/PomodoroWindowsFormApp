@@ -1,0 +1,10 @@
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.csprojAssemblyReference.cache
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.Form1.resources
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.Properties.Resources.resources
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.csproj.GenerateResource.cache
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.csproj.CoreCompileInputs.cache
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\bin\Debug\PomodoroWindowsFormApp.exe.config
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\bin\Debug\PomodoroWindowsFormApp.exe
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\bin\Debug\PomodoroWindowsFormApp.pdb
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.exe
+C:\Users\MyAsus\Desktop\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.pdb
