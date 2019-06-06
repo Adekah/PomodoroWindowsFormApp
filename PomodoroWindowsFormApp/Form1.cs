@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Media;
 
 namespace PomodoroWindowsFormApp
 {
@@ -16,13 +17,26 @@ namespace PomodoroWindowsFormApp
         {
             InitializeComponent();
         }
-
+        SoundPlayer SPNotification = new SoundPlayer(@"C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\Sound\NotiSound.wav");
+        void BtnColorReset()
+        {
+            BtnLongBreak.BackColor = Color.Transparent;
+            BtnBreak.BackColor = Color.Transparent;
+            BtnPomodoro.BackColor = Color.Transparent;
+            BtnStop.BackColor = Color.Transparent;
+            BtnStart.BackColor = Color.Transparent;
+        }
         private void Form1_Load(object sender, EventArgs e)
         {
+         
+
             LblMessage.Visible = false;
-            timer1.Interval = 500;
-            LblMinute.Text = "25";
+            BtnStart.Visible = false;
+            timer1.Interval = 1000;
+            LblMinute.Text = "00";
             LblSecond.Text = "00";
+            BtnColorReset();
+            
 
         }
 
@@ -30,9 +44,13 @@ namespace PomodoroWindowsFormApp
         {
             LblMessage.Text = "0";
             LblMinute.Text = "24";
-            LblSecond.Text = "59";
+           LblSecond.Text = "59";
             Second = 60;
+        
             timer1.Start();
+            BtnColorReset();
+            BtnPomodoro.BackColor = Color.LightSeaGreen;
+            LblTimeIsOver.Visible = false;
         }
 
         private void BtnBreak_Click(object sender, EventArgs e)
@@ -41,21 +59,56 @@ namespace PomodoroWindowsFormApp
             LblMinute.Text = "4";
             LblSecond.Text = "59";
             Second = 60;
+            BtnColorReset();
+            BtnBreak.BackColor = Color.LightSeaGreen;
             timer1.Start();
+            LblTimeIsOver.Visible = false;
         }
 
         private void BtnLongBreak_Click(object sender, EventArgs e)
         {
             LblMessage.Text = "2";
             LblMinute.Text = "14";
-            LblSecond.Text = "59";
-
+         //  LblSecond.Text = "59";
+            BtnColorReset();
+            BtnLongBreak.BackColor = Color.LightSeaGreen;
             Second = 60;
             timer1.Start();
+            LblTimeIsOver.Visible = false;
         }
         private void BtnStop_Click(object sender, EventArgs e)
         {
+      
             timer1.Stop();
+            BtnColorReset();
+
+            BtnStop.Visible = false;
+            BtnStart.Visible = true;
+            BtnStart.BackColor = Color.LightSeaGreen;
+     
+        }
+
+        private void BtnStart_Click(object sender, EventArgs e)
+        {
+            int message = Convert.ToInt32(LblMessage.Text);
+            BtnStop.Visible = true;
+            BtnStop.BackColor = Color.LightSeaGreen;
+            BtnStart.Visible = false;
+            BtnColorReset();
+     
+            timer1.Start();
+            if (message==0)
+            {
+                BtnPomodoro.BackColor = Color.LightSeaGreen;
+            }
+            else if (message == 1)
+            {
+                BtnBreak.BackColor = Color.LightSeaGreen;
+            }
+            else if (message == 2)
+            {
+                BtnLongBreak.BackColor = Color.LightSeaGreen;
+            }
         }
 
         int PomodoroMinute = 24; int Second = 60; int BreakMinute = 4; int LongbreakMinute = 14;
@@ -72,16 +125,19 @@ namespace PomodoroWindowsFormApp
                 {
                     PomodoroMinute--;
                     LblMinute.Text = PomodoroMinute.ToString();
+                    LblTimeIsOver.Text = "Pomodoro Time Is Over...";
                 }
                 else if (message == 1)
                 {
                     BreakMinute--;
                     LblMinute.Text = BreakMinute.ToString();
+                    LblTimeIsOver.Text = "Break Time Is Over...";
                 }
                 else if (message == 2)
                 {
                     LongbreakMinute--;
                     LblMinute.Text = LongbreakMinute.ToString();
+                    LblTimeIsOver.Text = "Long Break Time Is Over...";
                 }
 
                 LblSecond.Text = Second.ToString();
@@ -98,8 +154,12 @@ namespace PomodoroWindowsFormApp
                     timer1.Stop();
                     LblMinute.Text = "00";
                     LblSecond.Text = "00";
-
-                    MessageBox.Show("Süre Doldu");
+                    SPNotification.Play();
+                    LblTimeIsOver.Visible = true;
+                    PomodoroMinute = 24;
+                    BreakMinute = 5;
+                    LongbreakMinute = 15;
+                   
                 }
 
 
