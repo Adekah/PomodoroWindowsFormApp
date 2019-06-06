@@ -33,7 +33,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>Tomatoİco.ico</ApplicationIcon>
+    <ApplicationIcon>tomato.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -95,12 +95,17 @@
   <ItemGroup>
     <Content Include="bin\Debug\PomodoroWindowsFormApp.exe" />
     <Content Include="bin\Debug\PomodoroWindowsFormApp.pdb" />
-    <Content Include="Images\tomatotimer.jpg" />
+    <Content Include="Images\tomato.ico" />
+    <Content Include="Images\tomatobrain.jpg" />
+    <Content Include="Images\tomatoform.ico" />
+    <Content Include="Images\tomatotimer.png" />
+    <Content Include="Images\Tomatoİco.ico" />
     <Content Include="Images\Tomatoİco.png" />
     <Content Include="obj\Debug\PomodoroWindowsFormApp.csproj.FileListAbsolute.txt" />
     <Content Include="obj\Debug\PomodoroWindowsFormApp.exe" />
     <Content Include="obj\Debug\PomodoroWindowsFormApp.pdb" />
     <Content Include="Sound\NotiSound.wav" />
+    <Content Include="tomato.ico" />
     <Content Include="Tomatoİco.ico" />
   </ItemGroup>
   <ItemGroup>

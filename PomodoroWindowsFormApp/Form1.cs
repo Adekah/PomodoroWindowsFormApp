@@ -28,25 +28,24 @@ namespace PomodoroWindowsFormApp
         }
         private void Form1_Load(object sender, EventArgs e)
         {
-         
-
             LblMessage.Visible = false;
             BtnStart.Visible = false;
             timer1.Interval = 1000;
             LblMinute.Text = "00";
             LblSecond.Text = "00";
+            LblTitle.Text = "Tomato - Timer";
+            LblTitle.ForeColor = Color.Tomato;
+            MaximizeBox = false;
+            FormBorderStyle = FormBorderStyle.FixedDialog;
             BtnColorReset();
-            
-
         }
 
         private void BtnPomodoro_Click(object sender, EventArgs e)
         {
             LblMessage.Text = "0";
             LblMinute.Text = "24";
-           LblSecond.Text = "59";
+            LblSecond.Text = "59";
             Second = 60;
-        
             timer1.Start();
             BtnColorReset();
             BtnPomodoro.BackColor = Color.LightSeaGreen;
@@ -64,28 +63,25 @@ namespace PomodoroWindowsFormApp
             timer1.Start();
             LblTimeIsOver.Visible = false;
         }
-
         private void BtnLongBreak_Click(object sender, EventArgs e)
         {
             LblMessage.Text = "2";
             LblMinute.Text = "14";
-         //  LblSecond.Text = "59";
+            //  LblSecond.Text = "59";
             BtnColorReset();
             BtnLongBreak.BackColor = Color.LightSeaGreen;
             Second = 60;
             timer1.Start();
             LblTimeIsOver.Visible = false;
         }
-        private void BtnStop_Click(object sender, EventArgs e)
+       private void BtnStop_Click(object sender, EventArgs e)
         {
-      
             timer1.Stop();
             BtnColorReset();
-
             BtnStop.Visible = false;
             BtnStart.Visible = true;
             BtnStart.BackColor = Color.LightSeaGreen;
-     
+
         }
 
         private void BtnStart_Click(object sender, EventArgs e)
@@ -95,9 +91,9 @@ namespace PomodoroWindowsFormApp
             BtnStop.BackColor = Color.LightSeaGreen;
             BtnStart.Visible = false;
             BtnColorReset();
-     
+
             timer1.Start();
-            if (message==0)
+            if (message == 0)
             {
                 BtnPomodoro.BackColor = Color.LightSeaGreen;
             }
@@ -159,7 +155,7 @@ namespace PomodoroWindowsFormApp
                     PomodoroMinute = 24;
                     BreakMinute = 5;
                     LongbreakMinute = 15;
-                   
+
                 }
 
 

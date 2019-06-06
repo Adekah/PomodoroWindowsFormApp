@@ -42,6 +42,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.BtnStart = new System.Windows.Forms.Button();
             this.LblTimeIsOver = new System.Windows.Forms.Label();
+            this.LblTitle = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -134,13 +135,12 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.pictureBox1.Image = global::PomodoroWindowsFormApp.Properties.Resources.tomatotimer;
-            this.pictureBox1.Location = new System.Drawing.Point(22, 25);
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.Location = new System.Drawing.Point(0, 40);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(317, 229);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox1.TabIndex = 8;
+            this.pictureBox1.Size = new System.Drawing.Size(365, 217);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
             // 
             // BtnStart
@@ -165,11 +165,22 @@
             this.LblTimeIsOver.Size = new System.Drawing.Size(100, 25);
             this.LblTimeIsOver.TabIndex = 10;
             // 
+            // LblTitle
+            // 
+            this.LblTitle.AutoSize = true;
+            this.LblTitle.Font = new System.Drawing.Font("Microsoft Sans Serif", 15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.LblTitle.Location = new System.Drawing.Point(117, 9);
+            this.LblTitle.Name = "LblTitle";
+            this.LblTitle.Size = new System.Drawing.Size(136, 25);
+            this.LblTitle.TabIndex = 12;
+            this.LblTitle.Text = "Tomato-Timer";
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(364, 487);
+            this.Controls.Add(this.LblTitle);
             this.Controls.Add(this.LblTimeIsOver);
             this.Controls.Add(this.BtnStart);
             this.Controls.Add(this.pictureBox1);
@@ -183,7 +194,7 @@
             this.Controls.Add(this.BtnPomodoro);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
-            this.Text = "Pomodoro";
+            this.Text = "PomodoroApp";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
@@ -205,6 +216,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Button BtnStart;
         private System.Windows.Forms.Label LblTimeIsOver;
+        private System.Windows.Forms.Label LblTitle;
     }
 }
 

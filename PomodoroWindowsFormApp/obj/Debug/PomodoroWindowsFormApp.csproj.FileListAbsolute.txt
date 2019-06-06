@@ -12,9 +12,9 @@ C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\b
 C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\bin\Debug\PomodoroWindowsFormApp.exe
 C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\bin\Debug\PomodoroWindowsFormApp.pdb
 C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.Form1.resources
-C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.Properties.Resources.resources
 C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.csproj.GenerateResource.cache
 C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.csproj.CoreCompileInputs.cache
 C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.exe
 C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.pdb
 C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.csprojAssemblyReference.cache
+C:\Users\MyAsus\Documents\GitHub\PomodoroWindowsFormApp\PomodoroWindowsFormApp\obj\Debug\PomodoroWindowsFormApp.Properties.Resources.resources
